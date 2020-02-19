@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package patrondeDiseñoFactory;
+package PatronDiseñoFactory;
 
 /**
  *
  * @author chamb
  */
-public class PruebaFormas {
-    public static void main(String[] args) {
-        Forma miForma= new Rectangulo();
-        miForma.dibujar();
-        miForma.redimensionar();
+public abstract class Conexion {
+
+    public Conexion() {
+    }
+    public String descripcion(){
+        return "Conexion Generica";
     }
 }
