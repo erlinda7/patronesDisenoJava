@@ -9,6 +9,7 @@ package PatronDiseñoFactory;
  *
  * @author chamb
  */
+//creacion
 //para crear varios tipos de conexiones a base de datos en tiempo de ejecucion
 //para no ir modificando en varios modulos si solo tuvieramos un tipo de conexion y se requiera otras
 public class Fabrica {

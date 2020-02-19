@@ -11,6 +11,7 @@ import PatronDiseñoFactory.Conexion;
  *
  * @author chamb
  */
+//creacion
 //Fabrica de fabricas
 public abstract class FabricaAbstracta {
 
