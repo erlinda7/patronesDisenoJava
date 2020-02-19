@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PatronDiseñoFactory;
+package PatronDiseñoFactoryAbstracta;
+
+import PatronDiseñoFactory.Conexion;
+import PatronDiseñoFactory.MySqlConexion;
+import PatronDiseñoFactory.OracleConexion;
+import PatronDiseñoFactory.PostgresqlConexion;
+import PatronDiseñoFactory.SqlServerConexion;
 
 /**
  *
  * @author chamb
  */
-//para crear varios tipos de conexiones a base de datos en tiempo de ejecucion
-//para no ir modificando en varios modulos si solo tuvieramos un tipo de conexion y se requiera otras
-public class Fabrica {
-    protected String tipo;
-
-    public Fabrica(String t) {
-        tipo = t;
-    }
+public class FabricaHereda extends FabricaAbstracta{
     
-    public Conexion creaConexion(){
-        if(tipo.equalsIgnoreCase("Oracle")){
+    @Override
+    protected Conexion creaConexion(String tipo){
+              if(tipo.equalsIgnoreCase("Oracle")){
             return new OracleConexion();
         }else if(tipo.equalsIgnoreCase("SQLServer")){
             return new SqlServerConexion();
