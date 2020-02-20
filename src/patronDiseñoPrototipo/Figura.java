@@ -11,6 +11,7 @@ package patronDiseñoPrototipo;
  */
 
 /*
+Creacion
 Permitir al cliente realizar acciones temporales con copias
 de los objetos sin afectar el objeto original
 
