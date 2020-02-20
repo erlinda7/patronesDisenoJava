@@ -11,12 +11,7 @@ package patronDiseñoPrototipo;
  */
 
 
-/*
-Permitir al cliente realizar acciones temporales con copias
-de los objetos sin afectar el objeto original
 
-Para esto se debe clonar el objeto en tiempo de ejecucion
-*/
 public class Persona {
     private String nombre;
 
