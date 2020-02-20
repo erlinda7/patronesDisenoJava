@@ -1,0 +1,11 @@
+patrones de diseño
+creacion
+  singleton
+  factory
+  factoryAbstract
+  builder
+  prototype
+estructura
+  proxy
+  adaptador
+  
